@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>SnapFromThere</groupId>
+    <artifactId>SnapFromThere</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-commons</artifactId>
+            <version>1.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-console </artifactId>
+            <version>1.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-console-standalone</artifactId>
+            <version>1.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-commons</artifactId>
+            <version>1.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.0.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.0.2.RELEASE</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <finalName>SnapFromThere</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.0</version>
+            </plugin>
+            <!-- <plugin>
+                 <groupId>org.mortbay.jetty</groupId>
+                 <artifactId>maven-jetty-plugin</artifactId>
+                 <version>6.1.10</version>
+                 <configuration>
+                     <scanIntervalSeconds>10</scanIntervalSeconds>
+                     <connectors>
+                         <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
+                             <port>8080</port>
+                             <maxIdleTime>60000</maxIdleTime>
+                         </connector>
+                     </connectors>
+                     <stopKey>STOP</stopKey>
+                     <stopPort>8005</stopPort>
+                 </configuration>
+             </plugin>-->
+        </plugins>
+    </build>
+</project>
