@@ -1,5 +1,9 @@
 package com.cg.dao;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Photo extends AbstractPhotoDomainObject {
     private String id;
     private String owner;
